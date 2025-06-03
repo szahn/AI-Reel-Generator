@@ -1,6 +1,6 @@
-# AI Reel Generator
+# Social Media Reel Generator
 
-Uses Python, OpenAI, Azure Video Indexer to generate short reels from Youtube videos. Made with [Cursor](https://www.cursor.com).
+Uses Python, OpenAI, Azure Video Indexer to generate short captioned reels from Youtube videos. Made with [Cursor](https://www.cursor.com).
 
 ## Firebase Database
 
@@ -73,3 +73,12 @@ docker run -v $(pwd)/videos:/app/videos -v $(pwd)/firebase-credentials.json:/app
 ## API
 
 To run the API, run: `python run_api.py`
+
+
+## Future Improvements
+
+* Use semantic chunking (segment transcripts by context instead of timestamps) to improve summarization requests.
+* Add React Material UI for processing, viewing, managing reels.
+* Add Stripe payment processing for pay-per-reel.
+* Make process asynchronous with queues to allow for batching of multiple reels.
+* Improve processing time and costs with additional transcription services.
